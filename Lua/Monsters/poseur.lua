@@ -1,5 +1,5 @@
 -- A basic monster script skeleton you can copy and modify for your own creations.
-comments = {"Wind is howling.", "Gladin is preparing his attack.",}
+comments = {"Wind is howling.", "Gladin is preparing his attack.","Looks punchable."}
 commands = {"Reason", "Taunt", "Search"}
 randomdialogue = {"..."}
 
