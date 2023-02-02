@@ -1,6 +1,6 @@
 -- A basic encounter script skeleton you can copy and modify for your own creations.
 
--- music = "shine_on_you_crazy_diamond" --Either OGG or WAV. Extension is added automatically. Uncomment for custom music.
+music = "AUTOPHOBIA"
 encountertext = "In my way. =)" --Modify as necessary. It will only be read out in the action select screen.
 nextwaves = {"bullettest_chaserorb"}
 wavetimer = 4.0
@@ -16,12 +16,17 @@ enemypositions = {
 }
 
 -- A custom list with attacks to choose from. Actual selection happens in EnemyDialogueEnding(). Put here in case you want to use it.
-possible_attacks = {"attack1"}
+possible_attacks = {"bullet_warhammer.lua","bullet_wavey.lua"}
 
 function EncounterStarting()
     -- If you want to change the game state immediately, this is the place.
+    require "Animation/blinkanim"
     Inventory.AddCustomItems({"Bandage","Butterscotch Pie","Cinnamon Bunny","Glamburger"},{0,0,0,0})
     Inventory.SetInventory({"Butterscotch Pie","Cinnamon Bunny","Cinnamon Bunny","Cinnamon Bunny","Glamburger","Glamburger","Glamburger","Bandage"})
+end
+
+function Update()
+   Animate() 
 end
 
 function EnemyDialogueStarting()

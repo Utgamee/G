@@ -1,16 +1,16 @@
 -- A basic monster script skeleton you can copy and modify for your own creations.
-comments = {"Wind is howling.", "Gladin is preparing his attack.",}
+comments = {"Wind is howling.", "Gladin is preparing his attack.","Looks punchable."}
 commands = {"Reason", "Taunt", "Search"}
 randomdialogue = {"..."}
 
-sprite = "poseur" --Always PNG. Extension is added automatically.
+sprite = "empty" --Always PNG. Extension is added automatically.
 name = "Gladin"
 hp = 200
-atk = 1
+atk = 100
 def = 1
-gold = 100
+gold = 125 
 xp = 100
-check = "His eyes are focused on you."
+check = "One of fallen humans. He looks diffrent than others."
 dialogbubble = "rightlarge" -- See documentation for what bubbles you have available.
 canspare = false
 cancheck = true
